@@ -17,8 +17,8 @@ module.exports = {
             // the "scss" and "sass" values for the lang attribute to the right configs here.
             // other preprocessors should work out of the box, no loader config like this necessary.
             'scss': 'vue-style-loader!css-loader!sass-loader',
-            'sass': 'vue-style-loader!css-loader!sass-loader?indentedSyntax',
-          },
+            'sass': 'vue-style-loader!css-loader!sass-loader?indentedSyntax'
+          }
         }
       },
       {
@@ -28,6 +28,11 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader'
+      },
+      {
+        test: /\.(js|vue)$/,
+        loader: 'eslint-loader',
+        enforce: 'pre'
       }
     ]
   },
