@@ -6,17 +6,18 @@
 
 <script>
 
-  export default {
-    data() {
-      return {
+export default {
+  data () {
+    return {
 
-      }
     }
   }
+}
+
 </script>
 
 <style lang="scss" scoped>
 
-  @import "../../assets/app.scss";
+@import "../../assets/app.scss";
 
 </style>
